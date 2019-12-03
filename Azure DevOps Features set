@@ -1,0 +1,8 @@
+How I started :
+create an azure account , then select a new resource which is DevOps Project
+create the sample application using the Python template and Django framework it takes us to give project name and confirming app name
+and the region also . whn clicked DONE it gives the following error :
+
+You can't register a new application in Azure Active Directory. Learn more: https://go.microsoft.com/fwlink/?linkid=843472. More details: Insufficient privileges to complete the operation..
+
+
