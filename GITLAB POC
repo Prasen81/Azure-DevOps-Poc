@@ -1,0 +1,17 @@
+AUTO DEVOPS :
+    - easy to start with , have GCP account and to test create template based project say RUBY on Rails. once its craeted an auto DevOps enabled , a pipeline
+    will be craeted with Build , test and Dast stage (Dynamic testing).
+    - if you have GCP account let GITlan create and manage your kubernetes cluster , its done in minutes and also check the deployment to Production option
+    - with K8s enabled it allows to have Promtheus as monitoring tool and Ingress for load balancing
+    - for Gitlab managed service and with free account things work quite slow so though the guide doesnt mention of installing teh Gitlan runner and using the shared service 
+    its better to use that or look into that option
+    - at the production stage log yopu can see the web address of the application
+    - tried the deployment to stage and manual deployment to Prod too... The REVIEW stage log gives you an oppertunity review the application before it goes to 
+    Production http://dast-15662678-dast-default.35.239.198.89.nip.io then it goes to Staging (http://prasen81-ruby-test-staging.35.239.198.89.nip.io)
+    once its deployed in Staging Dast enviornment gets delted automatically 
+    - waiting for manual action and also how much production deployment you wish to go that means how many nodes in K8S cluster 
+    there are different strategies available , so lets say we go with 50% and then 100% check the behaviour opf the pipeline
+    - Runner , for auto devops default comes with gitlab provided shared runners and with K8s its possible to install ur project specific Runner
+    and then disable the shared runner ( there are other variants of Runners like Group,shared and specific)
+    its lighting speed ...wowww!!
+    How this manual deployment to production can work , what it means having 50% or 25% ?? strategy wise....
