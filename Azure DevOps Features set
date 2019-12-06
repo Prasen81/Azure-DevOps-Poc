@@ -34,3 +34,41 @@ github . then save and Run. It will craete the pipeline , once the pipeline is c
 A pipeline is defined using a YAML file in your repo. Usually, this file is named azure-pipelines.yml and is located at the root of your repo.
 
 you can run the pipeline on a different image (ist the agent we are considering here) changing the value of VMImage ..and yes it runs of VM.
+
+once you put the test coverage there will new steps created and the results will be visible in the build page of the pipeline.
+
+Possible to run multiple platforms from making a pool of VMImages and running the same code:
+
+strategy:
+  matrix:
+    linux:
+      imageName: "ubuntu-16.04"
+    mac:
+      imageName: "macos-10.13"
+    windows:
+      imageName: "vs2017-win2016"
+  maxParallel: 3
+  
+  * Multiple Platforms
+  * Multiple Versions
+  * Multiple version on Multiple platform
+    strategy:
+  matrix:
+    jdk10_linux:
+      imageName: "ubuntu-16.04"
+      jdk_version: "1.10"
+    jdk11_windows:
+      imageName: "vs2017-win2016"
+      jdk_version: "1.11"
+  maxParallel: 2
+  
+  so its possible to replace those env variables... maxparallel means how many parallel pipeline or jobs part of Azure Pipeline as per Azure devops terminalogy
+  Its possible trigger the pipeline except for master branch , sp[ecify the branch name then only changes for those branches the job will be triggered
+  
+  
+ Continuous Deployment :
+ -------------------------
+ 
+ To use deployment jobs, make sure the multi-stage pipelines experience is turned on. user->user settings->preview feature 
+ find the multistage pipeline feature 
+  
