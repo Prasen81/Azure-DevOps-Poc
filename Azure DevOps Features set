@@ -6,3 +6,31 @@ and the region also . whn clicked DONE it gives the following error :
 You can't register a new application in Azure Active Directory. Learn more: https://go.microsoft.com/fwlink/?linkid=843472. More details: Insufficient privileges to complete the operation..
 
 
+Azure DevOps :
+----------------
+Languages
+You can use many languages with Azure Pipelines, such as Python, Java, JavaScript, PHP, Ruby, C#, C++, and Go.
+
+Version control systems
+Before you use continuous integration and continuous delivery practices for your applications, you must have your source code in a version control system. Azure Pipelines integrates with GitHub, GitHub Enterprise, Azure Repos Git & TFVC, Bitbucket Cloud, and Subversion.
+
+Application types
+You can use Azure Pipelines with most application types, such as Java, JavaScript, Node.js, Python, .NET, C++, Go, PHP, and XCode.
+
+Deployment targets
+Use Azure Pipelines to deploy your code to multiple targets. Targets include container registries, virtual machines, Azure services, or any on-premises or cloud target.
+
+Package formats
+To produce packages that can be consumed by others, you can publish NuGet, npm, or Maven packages to the built-in package management repository in Azure Pipelines. You also can use any other package management repository of your choice.
+
+
+
+First pipeline creation :
+
+we create a project and then create a pipeline 
+we can fork an example github project then use it in the pipeline , allow Azure to access your github account , select a project from 
+github . then save and Run. It will craete the pipeline , once the pipeline is craeted , checkback your github page , it will have the azure devops cicd yml 
+
+A pipeline is defined using a YAML file in your repo. Usually, this file is named azure-pipelines.yml and is located at the root of your repo.
+
+you can run the pipeline on a different image (ist the agent we are considering here) changing the value of VMImage ..and yes it runs of VM.
