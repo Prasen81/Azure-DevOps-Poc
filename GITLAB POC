@@ -15,3 +15,19 @@ AUTO DEVOPS :
     and then disable the shared runner ( there are other variants of Runners like Group,shared and specific)
     its lighting speed ...wowww!!
     How this manual deployment to production can work , what it means having 50% or 25% ?? strategy wise....
+    - Autodevops environment variables : can help us to control sub stages ...of the pipeline for Autodevops
+    refer
+    Auto Devops CI/CD.yml
+    https://gitlab.com/gitlab-org/gitlab/blob/master/lib/gitlab/ci/templates/Auto-DevOps.gitlab-ci.yml
+    
+    Created an Issue , assigned to myself and then created a merge request which in general is like a Pull request which default creates 
+    a branch and then start working for the issue in the new branch fix the issue and commit the change it will trigger the Auto DevOps
+    Pipeline. if the build failed then the merge request is assigned back to assigned person .
+    
+    Once the test successful there will be View app in the merge request , please check the stages you will not see anything to Deploy , though we can anable staging to deploy , i guess 
+    that we can test. if the review is fine then we can merge it master which will create another pipeline and will delete the branch once its
+    done sucecssfully.
+    
+    okay tried another example template note AutoDevOps not working for .net core project , so will check it part of CI/CD part task
+    
+    
