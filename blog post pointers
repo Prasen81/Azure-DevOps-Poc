@@ -1,0 +1,5 @@
+concourse vs jenkins
+stand alone vs cloud based (can we have runner locally running the CI pipeline)
+Matrix build (cross platform diff version)??
+templates
+release startegy azure devops vs gitlab
