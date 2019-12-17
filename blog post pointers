@@ -1,5 +1,34 @@
-concourse vs jenkins
-stand alone vs cloud based (can we have runner locally running the CI pipeline)
-Matrix build (cross platform diff version)??
-templates
-release startegy azure devops vs gitlab
+AZURE DevOps vs Gitlab 
+1. Introduction and scope (mainly CI/CD )
+2. Criteria of measurement
+3. introduction and history of each tool
+4. architecture
+5. explaining each measurtement point 
+  a. Open Source
+  b. Pipeline , how CI/CD configured or works , manula review /gated review process ,YAML support
+  c. Operating system support
+  d. Cross Platform/cross version support 
+  e. techonology domains coverage
+  f. Local or Cloud based , Local runner
+  g. parallel running 
+  h. Retrigger a defined step of the pipeline
+  i. artifacts store and move within steps in the pipeline
+  j. Release strategy
+  k. Template support
+  l. deployment strategy and support
+  m. monitoring post deployment
+  n. code coverage and security
+  o. Repository compariosn integration support
+  p. secrets management
+  
+6. Project Management scope 
+7. Conclusion
+
+Compariosn Headlines and sub headlines
+a. Code Respository and Integration
+b. Verify 
+c. Package
+d.Security
+e. Release
+f. Configure
+g. Monitor
